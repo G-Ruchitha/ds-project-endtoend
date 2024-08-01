@@ -4,4 +4,6 @@ seaborn
 scikit-learn
 matplotlib
 streamlit
+catboost
+xgboost
 -e .
