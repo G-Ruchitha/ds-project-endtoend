@@ -58,3 +58,12 @@ def evaluate_models(x_train,y_train,x_test,y_test,models,param):
     
     except Exception as e:
         raise CustomException(e,sys)
+
+# this is used to load the model.pkl (used in predict_pipeline)
+def load_object(file_path):
+    try:
+        with open(file_path, "rb") as file_obj:
+            return dill.load(file_obj)
+    
+    except Exception as e:
+        raise CustomException(e,sys)
