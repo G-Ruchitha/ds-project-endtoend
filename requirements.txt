@@ -6,4 +6,5 @@ matplotlib
 streamlit
 catboost
 xgboost
--e .
+dill
+#-e .
